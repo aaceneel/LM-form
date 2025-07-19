@@ -22,7 +22,6 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/thankyou" element={<ThankYou />} />
-            <Route path="/received" element={<Navigate to="/received.html" replace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
