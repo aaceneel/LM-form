@@ -160,7 +160,7 @@ const Index = () => {
 
       // Wait for transition animation before redirect
       setTimeout(() => {
-        navigate('/received');
+        window.location.href = '/received.html';
       }, 800);
     } catch (error: any) {
       console.error('Error submitting form:', error);
