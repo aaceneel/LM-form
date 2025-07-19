@@ -67,12 +67,14 @@ const BasicInfoStep: React.FC<BasicInfoStepProps> = ({
       />
       
       <FormInput
-        label="Instagram ID (optional)"
+        label="Instagram ID"
         type="text"
         name="instagram"
         value={formData.instagram}
         onChange={handleChange}
         placeholder="Your Instagram username (without @)"
+        required
+        error={formErrors.instagram}
       />
     </>
   );

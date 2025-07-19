@@ -27,7 +27,9 @@ export const useFormValidation = () => {
         errors.whatsapp = 'Please enter a valid WhatsApp number with country code (e.g., +1 123 456 7890)';
       }
       
-      // Instagram is optional, no validation needed
+      if (!formData.instagram) {
+        errors.instagram = 'Instagram ID is required';
+      }
     } else if (step === 2) {
       if (!formData.contentTopic) errors.contentTopic = 'Please describe what you create content about';
       if (!formData.proudLink) errors.proudLink = 'Please provide a link to your proudest content';
